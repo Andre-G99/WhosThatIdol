@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background: url(../static/img/pokemon.png) no-repeat center center fixed;
+  background-size: 100% 100%;
+}
+
+h1 {
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  background: rgba(255, 255, 255, 0.5);
+  width: 50%;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  background: rgba(255, 255, 255, 0.5);
+  width: 50%;
+}

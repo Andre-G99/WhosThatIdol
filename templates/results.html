@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Who's That Idol</title>
+    <link rel="stylesheet" href="../static/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container1">
+        <h1>
+          If there is a comma separated list, the person in the photo is most
+          likely one of the two people listed.
+        </h1>
+
+        <br />
+
+        <h1>This Idol Is Most Likely: {{ idol1 }} {{ idol2 }}</h1>
+
+        <br />
+
+        <h1>They Are In The Group: {{ group1 }} {{ group2 }}</h1>
+
+        <br />
+
+        <h3>
+          Please note that the results are not perfect and are VERY prone to
+          error.
+        </h3>
+        <h3>
+          I did not train the facial recognition model myself, I'm using a
+          library that has a an already trained model.
+        </h3>
+
+        <a href="{{ url_for('index') }}"><button>Try Another Photo</button></a>
+      </div>
+    </div>
+  </body>
+</html>

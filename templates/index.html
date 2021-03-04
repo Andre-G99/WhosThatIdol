@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Who's That Idol</title>
+    <link rel="stylesheet" href="../static/main.css" />
+    {{ dropzone.load_css() }} {{ dropzone.style('border: 2px dashed #0087F7;
+    margin: 10%; min-height: 200px; max-width: 500px; background: transparent;')
+    }}
+  </head>
+  <body>
+    <div class="container">
+      {{ dropzone.create(action='upload') }} {{ dropzone.load_js() }} {{
+      dropzone.config(redirect_url=url_for('print_match')) }}
+
+            <div class = "container2">
+            <h1 class>
+          It may take a while to be redirected to the results
+        </h1>
+    </div>
+
+    </div>
+
+  </body>
+</html>
