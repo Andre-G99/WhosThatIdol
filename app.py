@@ -1197,12 +1197,16 @@ def detect_face_in_image(image):
             print(groups_round_2)
 
             if len(groups_round_2) == 1:
+                print(groups_round_2)
                 return groups_round_2
 
-            elif len(groups_round_2) == 2:
+            elif len(groups_round_2) == 2:)
+                print(groups_round_2)
                 return groups_round_2
 
             elif len(groups_round_2) > 2:
+                print('over 2')
+                print(groups_round_2)
                 match_result2 = face_recognition.compare_faces(match_list, unknown_encoding[0], tolerance= 0.37)
                 for x in range(0, len(match_result2)):
                     if match_result2[x]:
