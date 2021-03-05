@@ -1213,10 +1213,12 @@ def detect_face_in_image(image):
                         match_list2.append(match_list[x])
                         groups_round_3.append([groups_round_2[x]])
 
+                print(groups_round_3)
+
                 if len(groups_round_3) <= 2:
                     return groups_round_3
 
-                elif groups_round_3 > 2:
+                elif len(groups_round_3) > 2:
                     return ["Could Not Pinpoint. Try a different picture.", "Multiple Matches."]
 
                 return groups_round_3
