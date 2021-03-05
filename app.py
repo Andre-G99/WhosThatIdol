@@ -1200,7 +1200,7 @@ def detect_face_in_image(image):
                 print(groups_round_2)
                 return groups_round_2
 
-            elif len(groups_round_2) == 2:)
+            elif len(groups_round_2) == 2:
                 print(groups_round_2)
                 return groups_round_2
 
