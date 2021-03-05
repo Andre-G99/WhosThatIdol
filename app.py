@@ -1194,6 +1194,8 @@ def detect_face_in_image(image):
                     match_list.append(known_faces[x])
                     groups_round_2.append(group_and_name[x])
 
+            print(groups_round_2)
+
             if len(groups_round_2) == 1:
                 return groups_round_2
 
