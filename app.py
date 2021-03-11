@@ -3,7 +3,6 @@ import face_recognition
 
 
 from flask import Flask, request, render_template, current_app, g
-from flask.cli import with_appcontext
 from flask_dropzone import Dropzone
 
 basedir = os.path.abspath(os.path.dirname(__file__))
